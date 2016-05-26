@@ -1,0 +1,33 @@
+.block {
+  padding: 20px;
+  
+  a {
+    margin-left: 5px;
+  }
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.book_list {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.status {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.pending {
+  composes: status;
+  color: green;
+}
+
+.error {
+  composes: status;
+  color: red;
+}

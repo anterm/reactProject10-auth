@@ -1,0 +1,34 @@
+.block {
+  padding: 20px;
+}
+
+.title {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.button_normal {
+  margin-right: 10px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button_reset {
+  composes: button_normal;
+  background-color: #676767;
+  border: 1px solid #302B2B;
+}
+
+.button_inc {
+  composes: button_normal;
+  background-color: #96D615;
+  border: 1px solid #7DB30F;
+}
+
+.button_dec {
+  composes: button_normal;
+  background-color: #F98A19;
+  border: 1px solid #CA6C0D;
+}

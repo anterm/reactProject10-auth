@@ -1,0 +1,95 @@
+@value icons: "../../icomoon.css";
+
+.block {
+  text-align: center;  
+  margin-top: 50px;
+}
+
+.social_buttons {}
+
+.link {
+	margin-right: 5px;
+	font-size: 20px;
+	display: inline-block;
+	color: white;
+
+	span {
+		display: inline-block;
+		width: 40px;
+		padding: 5px 0;
+		box-shadow: 0 0 2px #142538;
+		border-radius: 3px;
+	}
+}
+
+.facebook_icon {
+	composes: facebook3 from icons;
+	background-color: #48729e;
+}
+
+.vk_icon {
+	composes: vk2 from icons;
+	background-color: #3c5a98;
+}
+
+.twitter_icon {
+	composes: twitter2 from icons;
+	background-color: #39C;
+}
+
+.inputs {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  
+  input {
+    border: 1px solid #939393;
+    border-radius: 3px;
+    color: #4D4C4C;
+    display: block;
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 5px 10px;
+  }
+}
+
+.login_buttons {
+  text-align: center;
+}
+
+.login_button {
+	border: none;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 20px;
+	margin: 0 auto;
+	padding: 5px 10px;
+	
+	&:first-child {
+		margin-right: 15px;
+		width: 115px;
+	}
+  
+  &_active {
+    composes: login_button;
+    background: linear-gradient(160deg, #F59906, rgb(207, 102, 78));
+    box-shadow: 0 0 3px 1px #865507;
+    color: white;
+    text-shadow: 0px 0px 1px #573A0B;
+    
+    &:hover {
+      background: #F59906;
+    }
+  }
+
+  &_disabled {
+    composes: login_button;
+    background: #efefef;
+    box-shadow: 0 0 3px 1px #A2A09C;
+    color: #999;
+  }
+}
+
+.loading {
+	margin-top: 20px;
+	min-height: 24px;
+}

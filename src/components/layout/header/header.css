@@ -1,0 +1,50 @@
+@value icons: "../../icomoon.css";
+
+.block {
+  background: url(./bg.gif);
+  
+  &_wrapper {
+    padding: 10px 20px;
+    background-color: rgba(198, 198, 198, .8);
+  }
+}
+
+.link {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #069;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 2px;
+  
+  &_home {
+    composes: icon;
+    composes: home from icons;
+  }
+  
+  &_books {
+    composes: icon;
+    composes: document-text from icons;
+  }
+  
+  &_about {
+    composes: icon;
+    composes: user-outline from icons;
+  }
+}
+
+.user {
+  display: inline-block;
+  
+  &_info {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(251, 251, 251, 0.6);
+    color: #55208E;
+  }
+}
